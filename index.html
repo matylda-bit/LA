@@ -4,7 +4,8 @@
   <!-- Theme Made By www.w3schools.com -->
   <title>LA Nails and spa</title>
   <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -23,7 +24,9 @@
 img {
   border-radius: 50%;
   }
- 
+ #img1 {
+  clip-path: circle(80%);
+}
   h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -60,6 +63,9 @@ img {
     color: aqua;
     font-size: 200px;
   }
+  p.small {
+  font-variant: small-caps;
+}
   .thumbnail {
     padding: 0 0 15px 0;
     border: none;
@@ -151,7 +157,13 @@ img {
     color: #fff !important;
   }
   * {box-sizing: border-box;}
-
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: lightblue;
+}
 .img-magnifier-container {
   position:relative;
 }
@@ -813,32 +825,33 @@ img {
 </div>
 </div>
 
-
+  
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid text-center bg-grey">
   <h1>CONTACT US</h1><br>
 
-  <div class="column">
-   <div class="col-sm">
-  <div class="row">
-  </div>
-  
-  <p>Address:</p>
-    <p><span class="glyphicon glyphicon-map-marker"></span> 21-22 London Road Edinburgh EH7 5AY</p>
-    <p><span class="glyphicon glyphicon-phone"></span> 07468999678</p>
-    <p><span class="glyphicon glyphicon-envelope"></span>  lanailsspa22@gmail.com</p>
-       
+
+  <div class="newspaper">
+    <p> Address:<br> 21-22 London Road <br> Edinburgh EH7 5AY </p>
+    <p> Tel: 07468999678</p>
+    <p> Email: lanailsspa22@gmail.com </p>
+
     
-    </div>
-  </div>
+
+
   
-  <div class="column">
-    <img src="images/13.jpg" class="img-thumbnail" alt="nails" width="304" height="236"> 
+  
+  
+  
+  
+<img id="img1" src="images/13.jpg" alt="nails" width="100" height="100">
+
+   
   </div>
  
-    <div class="col-sm">
+    
                 <div class="facebook-iframe">
-                    <h3>CONNECT ON FACEBOOK</h3>
+                    
                    <i class="fa fa-facebook-official" style="font-size:48px;color:blue"></i>
                     <div class="fb-page" data-href="https://www.facebook.com" data-tabs="timeline" data-width="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
                         <div class="fb-xfbml-parse-ignore">
@@ -850,17 +863,18 @@ img {
             </div>
    
 </div>
+</div>
 <br>
   </div>
 
 <div> 
-
-  <footer class="container-fluid text-center">
+<footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   <p class="copyright"><strong>Copyright &copy; L.A. Nails and Spa</strong>  <a href="https://www.facebook.com/groups/1429690131505897/user/61577606979178/" title="Visit us">Edinburgh</p>
 </footer>
+
 
 </div>
  <a href="https://lanailsandspa.trafft.com/" id="book_online" target="_bookApt"><img src="images/book_online.jpg"/></a>
