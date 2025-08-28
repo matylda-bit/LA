@@ -156,6 +156,36 @@ img {
     border-color: transparent;
     color: #fff !important;
   }
+
+  * {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
   * {box-sizing: border-box;}
 .newspaper {
   column-count: 3;
@@ -831,24 +861,17 @@ img {
   <h1>CONTACT US</h1><br>
 
 
-  <div class="newspaper">
-    <p> Address:<br> 21-22 London Road <br> Edinburgh EH7 5AY </p>
-    <p> Tel: 07468999678</p>
-    <p> Email: lanailsspa22@gmail.com </p>
-
+  
     
-
-
-  
-  
-  
-  
-  
-<img id="img1" src="images/13.jpg" alt="nails" width="100" height="100">
-
-   
-  </div>
- 
+    
+<br>
+<br>
+<div class="flex-container">
+  <div class="flex-item-left"><p> Address:<br> 21-22 London Road <br> Edinburgh EH7 5AY </p></div>
+  <div class="flex-item-right"><p> Tel: 07468999678</p><p> Email: lanailsspa22@gmail.com </p> </div>
+</div>
+  <div class="flex-container">
+  <div class="flex-item-left"><p> 
     
                 <div class="facebook-iframe">
                     
@@ -859,15 +882,12 @@ img {
                               <ip class="small" style="font-size:18px;color:blue">L A Nails and Spa</a></blockquot></ip></div>
                         </div>
                     </div>
-                </div>
-            </div>
-   
-</div>
-</div>
-<br>
-  </div>
+                </div></div></p>
 
-<div> 
+<div>  <div class="flex-item-right"><img id="img1" src="images/13.jpg" alt="nails" width="100" height="100"></div>
+</div>
+
+
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
